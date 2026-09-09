@@ -9,8 +9,8 @@ import lombok.Setter;
 
 import java.util.UUID;
 
-@Entity
 @Table(name = "address")
+@Entity
 @Getter
 @Setter
 @NoArgsConstructor
@@ -18,7 +18,7 @@ import java.util.UUID;
 public class Address {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     private UUID id;
 
     private String city;
